@@ -117,8 +117,23 @@
       &__wrapper {
         align-items: flex-start;
 
+        & img {
+          width: 70px;
+        }
+
+        & h2 {
+          font-size: 1.125rem;
+        }
+
         & p {
           text-align: left;
+          font-size: 1rem;
+        }
+
+        &-icons {
+          & img {
+            width: 25px;
+          }
         }
       }
 
@@ -127,7 +142,7 @@
         flex-direction: column;
         row-gap: 1rem;
 
-        font-size: 1rem;
+        font-size: 1.125rem;
 
         & h3 {
           color: var(--base-yellow-color);
@@ -144,7 +159,16 @@
 
       &__payment-methods {
         align-items: flex-start;
+        font-size: 1.125rem;
       }
+    }
+  }
+
+  .rights {
+    font-size: 1rem;
+
+    & img {
+      width: 1.125rem;
     }
   }
 }

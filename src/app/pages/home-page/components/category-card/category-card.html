@@ -1,0 +1,14 @@
+<div class="category-card">
+  <div class="category-card__image" [style.background-image]="'url(' + imageUrl + ')'"></div>
+
+  <div class="category-card__wrapper">
+    <div class="category-card__wrapper-title">
+      <h3>{{ title }}</h3>
+      <button>
+        <img src="assets/images/arrow-right-white.svg" />
+      </button>
+    </div>
+    <span class="category-card__wrapper-description">{{ description }}</span>
+    <p class="category-card__wrapper-price">{{ price }}</p>
+  </div>
+</div>

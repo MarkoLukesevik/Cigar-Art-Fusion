@@ -93,6 +93,17 @@
   .header {
     padding: 1rem 2rem;
     &-content {
+      &__images {
+        &-logo {
+          width: 70px;
+          height: 70px;
+        }
+
+        &-logo-text {
+          width: 130px;
+        }
+      }
+
       &__navigation {
         display: flex;
 
@@ -106,7 +117,7 @@
 
           &__item {
             color: var(--base-white-color);
-            font-size: 1rem;
+            font-size: 1.25rem;
             font-weight: 500;
             text-transform: uppercase;
             cursor: pointer;

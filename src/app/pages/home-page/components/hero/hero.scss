@@ -36,11 +36,13 @@
     }
 
     & span {
+      max-width: 400px;
       color: var(--base-yellow-color);
       opacity: 0.7;
       text-align: center;
       font-weight: 200;
       font-size: 0.75rem;
+      line-height: 1rem;
     }
 
     &__buttons {
@@ -90,17 +92,21 @@
       align-items: flex-start;
 
       & p {
+        font-size: 1.125rem;
         text-align: left;
       }
 
       & h1 {
+        font-size: 4rem;
         text-align: left;
-        max-width: 450px;
+        max-width: 800px;
       }
 
       & span {
+        font-size: 1.375rem;
         text-align: left;
-        max-width: 420px;
+        max-width: 800px;
+        line-height: 1.5rem;
       }
 
       &__buttons {
@@ -108,7 +114,8 @@
         width: max-content;
 
         & button {
-          min-width: 150px;
+          min-width: 200px;
+          font-size: 1.25rem;
           width: max-content;
         }
       }

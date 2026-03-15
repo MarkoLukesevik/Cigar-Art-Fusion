@@ -1,0 +1,46 @@
+<div class="featured">
+  <div class="featured-header">
+    <p>OUR COLLECTIONS</p>
+    <h2>Featured Categories</h2>
+    <span>
+      Explore our curated collections of handcrafted cigar band art pieces, each made with passion
+      and precision.
+    </span>
+  </div>
+
+  <div class="featured-content">
+    <div class="featured-content__card">
+      <app-category-card
+        [title]="'Art Pictures'"
+        [description]="'Original cigar band art pieces in various sizes. Free shipping included.'"
+        [price]="'From 200€'"
+        [imageUrl]="'assets/images/products/no-risk-no-reward.jpeg'"
+      />
+    </div>
+
+    <div class="featured-content__card">
+      <app-category-card
+        [title]="'Custom Sneakers'"
+        [description]="'Hand-painted sneakers with your choice of art design.'"
+        [price]="'From 500€'"
+        [imageUrl]="'assets/images/products/scrooge.jpeg'"
+      />
+    </div>
+
+    <div class="featured-content__card">
+      <app-category-card
+        [title]="'T-Shirts'"
+        [description]="'Premium quality t-shirts with selected art design.'"
+        [price]="'From 200€'"
+        [imageUrl]="'assets/images/products/the-man.jpeg'"
+      />
+    </div>
+  </div>
+
+  <div class="featured-footer">
+    <button class="featured-footer__button">
+      <span>View All Products</span>
+      <img src="assets/images/arrow-right.svg" alt="Arrow right" />
+    </button>
+  </div>
+</div>
