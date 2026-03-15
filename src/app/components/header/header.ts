@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header {
+  private router: Router = inject(Router);
 
+  isMobileNavigationActive: boolean = false;
+
+  async handleLinkClick(route: string): Promise<void> {
+    await this.router.navigateByUrl(route);
+  }
+
+  isRouteActive(route: string): boolean {
+    return this.router.url.includes(route);
+  }
+
+  toggleMobileNavigation(): void {
+    this.isMobileNavigationActive = !this.isMobileNavigationActive;
+  }
 }

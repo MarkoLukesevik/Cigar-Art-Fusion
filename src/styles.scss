@@ -1,5 +1,12 @@
 @import url('assets/fonts/geist/geist.css');
 
+:root {
+  --base-black-color: #000000;
+  --base-dark-color: #0a0a0a;
+  --base-white-color: #ffffff;
+  --base-yellow-color: #d5af6d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +18,7 @@ body {
   flex-direction: column;
   flex: 1 1 auto;
 
+  background-color: var(--base-dark-color);
   user-select: none;
   font-family: 'Manrope', sans-serif;
   font-size: 16px;

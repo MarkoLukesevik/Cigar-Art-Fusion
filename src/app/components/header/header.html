@@ -1,1 +1,81 @@
-<p>header works!</p>
+<header class="header">
+  <div class="header-content">
+    <div class="header-content__images" (click)="handleLinkClick('home')">
+      <img class="header-content__images-logo" src="images/logo.svg" alt="logo" />
+      <img class="header-content__images-logo-text" src="images/logo-text.svg" alt="logo text" />
+    </div>
+
+    <nav class="header-content__navigation">
+      <ul class="header-content__navigation-list">
+        <li
+          class="header-content__navigation-list__item"
+          [class.header-content__navigation-list__item-active]="isRouteActive('home')"
+          (click)="handleLinkClick('home')"
+        >
+          Home
+        </li>
+        <li
+          class="header-content__navigation-list__item"
+          [class.header-content__navigation-list__item-active]="isRouteActive('about-us')"
+          (click)="handleLinkClick('about-us')"
+        >
+          About us
+        </li>
+        <li
+          class="header-content__navigation-list__item"
+          [class.header-content__navigation-list__item-active]="isRouteActive('products')"
+          (click)="handleLinkClick('products')"
+        >
+          Products
+        </li>
+        <li
+          class="header-content__navigation-list__item"
+          [class.header-content__navigation-list__item-active]="isRouteActive('contact')"
+          (click)="handleLinkClick('contact')"
+        >
+          Contact
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-content__hamburger">
+      <img src="images/hamburger.svg" alt="hamburger menu" (click)="toggleMobileNavigation()" />
+    </div>
+  </div>
+
+  <div
+    class="header-mobile-navigation"
+    [class.header-mobile-navigation__active]="isMobileNavigationActive"
+  >
+    <ul class="header-mobile-navigation__list">
+      <li
+        class="header-mobile-navigation__list-item"
+        [class.header-mobile-navigation__list-item__active]="isRouteActive('home')"
+        (click)="handleLinkClick('home')"
+      >
+        Home
+      </li>
+      <li
+        class="header-mobile-navigation__list-item"
+        [class.header-mobile-navigation__list-item__active]="isRouteActive('about-us')"
+        (click)="handleLinkClick('about-us')"
+      >
+        About us
+      </li>
+      <li
+        class="header-mobile-navigation__list-item"
+        [class.header-mobile-navigation__list-item__active]="isRouteActive('products')"
+        (click)="handleLinkClick('products')"
+      >
+        Products
+      </li>
+      <li
+        class="header-mobile-navigation__list-item"
+        [class.header-mobile-navigation__list-item__active]="isRouteActive('contact')"
+        (click)="handleLinkClick('contact')"
+      >
+        Contact
+      </li>
+    </ul>
+  </div>
+</header>
