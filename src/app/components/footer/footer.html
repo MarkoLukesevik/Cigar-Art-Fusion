@@ -1,1 +1,45 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-content__wrapper">
+      <img src="images/logo.svg" alt="Logo" />
+      <h2>Cigar & Art Fusion</h2>
+      <p>
+        Unique handcrafted art created from cigar bands. Where passion for cigars meets artistic
+        expression.
+      </p>
+
+      <div class="footer-content__wrapper-icons">
+        <a><img src="images/instagram.svg" alt="Instagram icon" /></a>
+        <a><img src="images/facebook.svg" alt="Facebook icon" /></a>
+      </div>
+    </div>
+
+    <div class="footer-content__navigation">
+      <h3>Navigation</h3>
+      <p (click)="handleLinkClick('home')">Home</p>
+      <p (click)="handleLinkClick('products')">Products</p>
+      <p (click)="handleLinkClick('about-us')">About Us</p>
+      <p (click)="handleLinkClick('contact')">Contact</p>
+    </div>
+
+    <div class="footer-content__navigation">
+      <h3>PRODUCTS</h3>
+      <p>Pictures</p>
+      <p>Custom Sneakers</p>
+      <p>T-Shirts</p>
+      <p>Chess Table</p>
+    </div>
+
+    <div class="footer-content__payment-methods">
+      <h3>PAYMENT METHODS</h3>
+      <p>IBAN/Swift (+10% Tax)</p>
+      <p>Binance USDT Transfer</p>
+      <p>Western Union Transfer</p>
+    </div>
+  </div>
+</footer>
+
+<div class="rights">
+  <img src="images/copyright.svg" alt="copyright icon" />
+  <p>2026 & Cigar & Art Fusion. All rights reserved.</p>
+</div>

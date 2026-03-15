@@ -5,6 +5,7 @@
   --base-dark-color: #0a0a0a;
   --base-white-color: #ffffff;
   --base-yellow-color: #d5af6d;
+  --base-yellow-secondary-color: #d5c1a0;
 }
 
 * {
@@ -19,6 +20,8 @@ body {
   flex: 1 1 auto;
 
   background-color: var(--base-dark-color);
+  min-height: 100vh;
+
   user-select: none;
   font-family: 'Manrope', sans-serif;
   font-size: 16px;

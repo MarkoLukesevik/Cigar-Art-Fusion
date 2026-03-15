@@ -1,0 +1,135 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--base-dark-color);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid var(--base-yellow-secondary-color);
+  border-bottom: 1px solid var(--base-yellow-secondary-color);
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+
+    padding: 1rem;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 0.5rem;
+
+      color: var(--base-yellow-color);
+
+      & img {
+        width: 60px;
+      }
+
+      & h2 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      & p {
+        text-align: center;
+        color: var(--base-yellow-secondary-color);
+        max-width: 350px;
+        font-size: 0.875rem;
+        font-weight: 300;
+      }
+
+      &-icons {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+
+        & img {
+          width: 20px;
+        }
+
+        & a {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+
+      font-size: 1rem;
+
+      & h3 {
+        color: var(--base-yellow-color);
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      & p {
+        color: var(--base-yellow-secondary-color);
+        font-weight: 300;
+        cursor: pointer;
+      }
+    }
+
+    &__payment-methods {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+
+      font-size: 1rem;
+
+      & h3 {
+        color: var(--base-yellow-color);
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      & p {
+        color: var(--base-yellow-secondary-color);
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.rights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+
+  padding: 1.5rem;
+  color: var(--base-yellow-color);
+  font-size: 0.875rem;
+  line-height: 1rem;
+
+  & img {
+    width: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    &-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 2rem;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+}
