@@ -61,24 +61,7 @@
     }
 
     &__navigation {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 1rem;
-
-      font-size: 1rem;
-
-      & h3 {
-        color: var(--base-yellow-color);
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-
-      & p {
-        color: var(--base-yellow-secondary-color);
-        font-weight: 300;
-        cursor: pointer;
-      }
+      display: none;
     }
 
     &__payment-methods {
@@ -123,13 +106,45 @@
   .footer {
     &-content {
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
 
       padding: 2rem;
       width: 100%;
       max-width: 1440px;
       margin: 0 auto;
+
+      &__wrapper {
+        align-items: flex-start;
+
+        & p {
+          text-align: left;
+        }
+      }
+
+      &__navigation {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        font-size: 1rem;
+
+        & h3 {
+          color: var(--base-yellow-color);
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        & p {
+          color: var(--base-yellow-secondary-color);
+          font-weight: 300;
+          cursor: pointer;
+        }
+      }
+
+      &__payment-methods {
+        align-items: flex-start;
+      }
     }
   }
 }

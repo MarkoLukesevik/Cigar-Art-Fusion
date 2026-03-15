@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FaturedCategories } from './fatured-categories';
+import { FeaturedCategories } from './featured-categories';
 
 describe('FaturedCategories', () => {
-  let component: FaturedCategories;
-  let fixture: ComponentFixture<FaturedCategories>;
+  let component: FeaturedCategories;
+  let fixture: ComponentFixture<FeaturedCategories>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FaturedCategories]
-    })
-    .compileComponents();
+      imports: [FeaturedCategories],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(FaturedCategories);
+    fixture = TestBed.createComponent(FeaturedCategories);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

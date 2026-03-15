@@ -3,3 +3,10 @@
   flex: 1 1 auto;
   flex-direction: column;
 }
+
+.home-page {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  row-gap: 2rem;
+}
